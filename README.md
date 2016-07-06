@@ -17,7 +17,7 @@ $ docker run -i --rm rsimmons/tomoji list - < inputvideo.mkv
 Available subtitle tracks (VOBSUB):
   #3: Japanese (jpn)
   #4: English (eng)
-$ docker run -i --rm rsimmons/tomoji ocr -k *YOUR_GOOGLE_API_KEY* - 3 < inputvideo.mkv > outputsubs_ja.srt
+$ docker run -i --rm rsimmons/tomoji ocr -k YOUR_GOOG_API_KEY - 3 < inputvideo.mkv > outputsubs_ja.srt
 ```
 
 On a recent version of Ubuntu, tomoji can be run like this:
@@ -31,7 +31,7 @@ $ ./env/bin/activate
 Available subtitle tracks (VOBSUB):
   #3: Japanese (jpn)
   #4: English (eng)
-(env) $ python3 tomoji.py ocr -k *YOUR_GOOGLE_API_KEY* inputvideo.mkv 3 > outputsubs_ja.srt
+(env) $ python3 tomoji.py ocr -k YOUR_GOOG_API_KEY inputvideo.mkv 3 > outputsubs_ja.srt
 ```
 
 ## Tips for Using HandBrake to Extract DVD/Blu-ray Discs
