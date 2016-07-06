@@ -10,7 +10,7 @@ Tomoji is implemented as a small Python wrapper/glue script; the real work is do
 
 Tomoji requires an .mkv (Matroska video) file with embedded subtitle-image (VOBSUB) tracks as input, so you'll have to use a separate program to extract a DVD/Blu-ray disc to an .mkv file. [HandBrake](https://handbrake.fr/) is a free, open source, multi-platform tool that works well for this purpose (see below for tips on the right settings to use for HandBrake).
 
-Installing the dependencies for tomoji can be a nightmare on Mac/Windows, so I've published a [Docker](https://www.docker.com/) image ([rsimmons/tomoji](https://hub.docker.com/rsimmons/tomoji/) that bundles them and lets you conveniently run tomoji on any platform supported by Docker. Input and output can be provided via stdin/stdout so that Docker volumes are not required:
+Installing the dependencies for tomoji can be a nightmare on Mac/Windows, so I've published a [Docker](https://www.docker.com/) image ([rsimmons/tomoji](https://hub.docker.com/r/rsimmons/tomoji/) that bundles them and lets you conveniently run tomoji on any platform supported by Docker. Input and output can be provided via stdin/stdout so that Docker volumes are not required:
 
 ```shell
 $ docker run -i --rm rsimmons/tomoji list - < inputvideo.mkv
